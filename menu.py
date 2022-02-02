@@ -4,10 +4,9 @@ import sys
 print("Por Favor Aguarde estante")
 
 time.sleep(3)
+
 print('''
-                                                       
-                                                                                                                           
-                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                            
                                                               
 ███████╗████████╗██████╗  █████╗ ████████╗██╗   ██╗███╗   ███╗
 ██╔════╝╚══██╔══╝██╔══██╗██╔══██╗╚══██╔══╝██║   ██║████╗ ████║
@@ -32,7 +31,7 @@ if do == '1':
  
  if do == '2':
 
-print("Pois esse é um projeto que ficara pronto embreve") 
+print("Pois este é um projeto estará funcionando embreve") 
 
 
 if do == '3':
