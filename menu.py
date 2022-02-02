@@ -1,4 +1,5 @@
 import time
+import sys
 
 print("Por Favor Aguarde estante")
 
@@ -36,5 +37,5 @@ print("Pois esse é um projeto que ficara pronto embreve")
 
 if do == '3':
 
-os.system("exit")
+sys.exit()
 
