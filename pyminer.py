@@ -1,24 +1,6 @@
 # The MIT License (MIT)
 #
-# Copyright (c) 2014 Richard Moore
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-# THE SOFTWARE.
+# Copyright (c) 2021 Gilmar filho
 
 import binascii, json, hashlib, socket, struct, sys, threading, time, urlparse
 
@@ -27,7 +9,7 @@ USER_AGENT = "PyMiner"
 VERSION = [0, 1]
 
 
-# Which algorithm for proof-of-work to use
+# qual algoritmo para prova de trabalho usar
 ALGORITHM_SCRYPT      = 'scrypt'
 ALGORITHM_SHA256D     = 'sha256d'
 ALGORITHM_YESCRYPT    = 'yescrypt'
@@ -35,7 +17,7 @@ ALGORITHM_YESCRYPT    = 'yescrypt'
 ALGORITHMS = [ ALGORITHM_SCRYPT, ALGORITHM_SHA256D, ALGORITHM_YESCRYPT ]
 
 
-# Verbosity and log level
+# Verbosidade e nível de log
 QUIET           = False
 DEBUG           = False
 DEBUG_PROTOCOL  = False
@@ -50,7 +32,7 @@ LEVEL_ERROR     = 'error'
 SCRYPT_LIBRARY_C = 'scrypt (https://github.com/forrestv/p2pool)'
 SCRYPT_LIBRARIES = [ SCRYPT_LIBRARY_C ]
 
-YESCRYPT_LIBRARY_C      = 'https://password-hashing.net/submissions/yescrypt-v1.tar.gz'
+YESCRYPT_LIBRARY_C      = 'https://password-hashing.net/submissions/yescrypt-v2.tar.gz'
 YESCRYPT_LIBRARIES = [ YESCRYPT_LIBRARY_C ]
 
 WELCOME_MSG = ("If you have found this software useful and would like to support its future\n"
@@ -81,7 +63,7 @@ def log(message, level):
   print ("[%s] %s" % (time.strftime("%Y-%m-%d %H:%M:%S"), message))
 
 
-# Convert from/to binary and hexidecimal strings (could be replaced with .encode('hex') and .decode('hex'))
+#Converter de/para strings binárias e hexadecimais (pode ser substituído por .encode('hex') e .decode('hex'))
 hexlify = binascii.hexlify
 unhexlify = binascii.unhexlify
 
