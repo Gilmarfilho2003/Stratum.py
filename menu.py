@@ -19,8 +19,8 @@ print('''
 
 do = input('''
                1- Zpool
-               2-zergpool
-               3-Sair
+               2- zergpool
+               3- Sair
                
 print('Aguarde')
 
@@ -32,3 +32,9 @@ if do == '1':
  if do == '2':
 
 print("Pois esse é um projeto que ficara pronto embreve") 
+
+
+if do == '3':
+
+os.system("exit")
+
